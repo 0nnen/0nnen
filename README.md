@@ -1,4 +1,4 @@
-<h2 align="left">Hi 👋! My name is 0nnen/Mato and I'm a french student who wants to become a game dev. 👨‍💻⚡</h2>
+<h2 align="left">Hi 👋! My name is 0nnen/Mato and I'm a french developer who creates games. 👨‍💻⚡</h2>
 
 ###
 
