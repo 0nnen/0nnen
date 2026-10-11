@@ -1,7 +1,7 @@
+<img src="assets/marquee-skills.svg" width="100%" alt="Unity, Unreal Engine, C#, C++, Game Design, Level Design, React, WebGL, Game Jams">
+
 <!-- Généré par tools/generate.php : modifier le script plutôt que ce fichier. -->
 <a href="https://mrebecca.net/en/"><img src="assets/header.svg" width="100%" alt="Mathias REBECCA - Game &amp; Web Developer based in France. Unity, Unreal Engine, C#, C++, Web."></a>
-
-<img src="assets/marquee-skills.svg" width="100%" alt="Unity, Unreal Engine, C#, C++, Game Design, Level Design, React, WebGL, Game Jams">
 
 <!-- <a href="https://mrebecca.net/en/projects/etherias-end/"><img src="assets/boss.svg" width="100%" alt="Etheria's End - featured project: a 3rd-person adventure on floating islands made with Unreal Engine. Lead dev &amp; game designer. Steam, June 2026."></a> -->
 
