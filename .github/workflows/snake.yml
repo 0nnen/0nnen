@@ -1,0 +1,34 @@
+# Serpent d'arcade qui mange le graphe de contributions (couleurs du
+# portfolio). Régénéré chaque nuit sur la branche « output ».
+name: snake
+
+on:
+  schedule:
+    - cron: "17 3 * * *"
+  workflow_dispatch:
+  push:
+    branches: [main, master]
+    paths: [".github/workflows/snake.yml"]
+
+permissions:
+  contents: write
+
+jobs:
+  generate:
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    steps:
+      - uses: Platane/snk@v3
+        with:
+          github_user_name: ${{ github.repository_owner }}
+          outputs: |
+            dist/snake.svg?color_snake=#FF5B4D&color_dots=#efe9c4,#c9dcae,#86b79a,#2f7a66,#013E37
+            dist/snake-dark.svg?color_snake=#FF5B4D&color_dots=#161b22,#0b4a41,#167060,#5fae94,#FEF8D4
+
+      - uses: crazy-max/ghaction-github-pages@v4
+        with:
+          target_branch: output
+          build_dir: dist
+          commit_message: "Snake: mise à jour"
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
