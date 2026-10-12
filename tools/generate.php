@@ -481,13 +481,15 @@ foreach (array_chunk($cards, 3) as $row) {
     $rows .= "</p>\n";
 }
 $ved = $data['VEDETTE']['slug'] ?? 'etherias-end';
+// Mise en page choisie sur GitHub (oct. 2026) : bandeau des compétences
+// tout en haut, carte « boss » masquée (gardée en commentaire).
 $readme = <<<MD
+<img src="assets/marquee-skills.svg" width="100%" alt="Unity, Unreal Engine, C#, C++, Game Design, Level Design, React, WebGL, Game Jams">
+
 <!-- Généré par tools/generate.php : modifier le script plutôt que ce fichier. -->
 <a href="$SITE/en/"><img src="assets/header.svg" width="100%" alt="Mathias REBECCA - Game &amp; Web Developer based in France. Unity, Unreal Engine, C#, C++, Web."></a>
 
-<img src="assets/marquee-skills.svg" width="100%" alt="Unity, Unreal Engine, C#, C++, Game Design, Level Design, React, WebGL, Game Jams">
-
-<a href="$SITE/en/projects/$ved/"><img src="assets/boss.svg" width="100%" alt="Etheria's End - featured project: a 3rd-person adventure on floating islands made with Unreal Engine. Lead dev &amp; game designer. Steam, June 2026."></a>
+<!-- <a href="$SITE/en/projects/$ved/"><img src="assets/boss.svg" width="100%" alt="Etheria's End - featured project: a 3rd-person adventure on floating islands made with Unreal Engine. Lead dev &amp; game designer. Steam, June 2026."></a> -->
 
 <img src="assets/marquee-levels.svg" width="100%" alt="Projects">
 
